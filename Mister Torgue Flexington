@@ -1,0 +1,22 @@
+import praw
+import quotes
+reddit = praw.Reddit(client_id='______',
+                     client_secret='____',
+                     username='Mister_Torgue_bot',
+                     password='____',
+                     user_agent='Mister Torgue')
+
+subreddit= reddit.subreddit ('borderlands')
+
+keyphrase = 'Mr. Torgue', 'Mister Torgue'
+
+def get_random_quotes():
+
+    with open ('../utils/quotes','r') as quotes:
+        quotes = quotes
+    return random.choice(quotes)
+
+for commment in subreddit.stream.comments():
+    if keyphrase in comment.body:
+        quotes = comment.body.replace
+
