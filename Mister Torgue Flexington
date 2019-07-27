@@ -4,11 +4,11 @@ reddit = praw.Reddit(client_id='______',
                      client_secret='____',
                      username='Mister_Torgue_bot',
                      password='____',
-                     user_agent='Mister Torgue')
+                     user_agent='_____')
 
 subreddit= reddit.subreddit ('borderlands')
 
-keyphrase = 'Mr. Torgue', 'Mister Torgue'
+keyphrase = 'Mr. Torgue', 'Mister Torgue', 'mr. torgue', 'mister torgue', 'MISTER TORGUE', 'MR. TORGUE'
 
 def get_random_quotes():
 
